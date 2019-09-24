@@ -1,0 +1,14 @@
+.img-magnifier-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 400px;
+  max-height: 600px;
+
+  box-shadow: 4px 3px 10px rgb(100, 99, 99);
+  img {
+    width: 100%;
+    object-fit: contain;
+    cursor: zoom-in;
+  }
+}

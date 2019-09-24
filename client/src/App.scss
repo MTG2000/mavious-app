@@ -1,0 +1,51 @@
+$danger: #ff6161;
+$primary: #398ad7;
+$dark: #666;
+$secondary: #555;
+@import url("https://fonts.googleapis.com/css?family=Cabin&display=swap");
+
+@import "~bootstrap/scss/bootstrap";
+@import "components/style/inputs.scss";
+@import "components/style/slider.scss";
+
+body {
+  // font-family: 'Cabin', sans-serif;
+  font-family: "Cabin", Cambria, Cochin, Georgia, Times, "Times New Roman",
+    serif;
+  background: linear-gradient(
+    113.93277578285381deg,
+    rgb(246, 245, 246) 5.614973262032086%,
+    rgba(217, 217, 217, 1) 96.52406417112299%
+  );
+  // background-repeat: no-repeat;
+  // width: 100vw;
+
+  // overflow: hidden;
+}
+main {
+  min-height: 100vh;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+.my-6 {
+  margin-top: 220px !important;
+  margin-bottom: 220px !important;
+}
+.mt-6 {
+  margin-top: 220px !important;
+}
+.mb-6 {
+  margin-bottom: 220px !important;
+}
+
+// .product-page {
+//   > img {
+//     max-width: 800px;
+//     max-height: 1200px;
+//     object-fit: cover;
+//     object-position: center center;
+//   }
+// }

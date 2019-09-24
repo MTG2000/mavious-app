@@ -1,0 +1,55 @@
+{
+  "name": "jeans-project",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://localhost:5000",
+  "homepage": ".",
+  "dependencies": {
+    "@apollo/react-hooks": "^3.1.1",
+    "@fortawesome/fontawesome-svg-core": "^1.2.19",
+    "@fortawesome/free-solid-svg-icons": "^5.9.0",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "animate.css": "^3.7.2",
+    "aos": "^2.3.4",
+    "apollo-boost": "^0.4.4",
+    "bootstrap": "^4.3.1",
+    "graphql": "^14.5.6",
+    "jquery": "^3.4.1",
+    "lodash": "^4.17.15",
+    "popper.js": "^1.15.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-notifications-component": "^2.1.0",
+    "react-responsive-carousel": "^3.1.49",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "3.0.1",
+    "uuid": "^3.3.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.0.1",
+    "node-sass": "^4.12.0"
+  }
+}

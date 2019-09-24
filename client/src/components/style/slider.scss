@@ -1,0 +1,30 @@
+.carousel {
+  direction: ltr !important;
+}
+
+.slider {
+  height: 60vh;
+  opacity: 1;
+  direction: ltr !important;
+
+  @media screen and(min-width:992px) {
+    height: 90vh;
+  }
+  .slide {
+    height: 100%;
+    > div {
+      height: 100%;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    p.legend {
+      opacity: 1;
+      background: rgba(34, 34, 34, 0.51);
+      font-size: 1.4em;
+    }
+  }
+}

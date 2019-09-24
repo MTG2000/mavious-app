@@ -1,0 +1,17 @@
+a.nav-link {
+  color: #fff !important;
+  &:hover {
+    transition: background-color 0.4s;
+
+    background: rgba(32, 54, 80, 0.788);
+  }
+  &:active {
+    background: rgba(233, 209, 209, 0.788);
+  }
+}
+
+.nav-wrapper {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}

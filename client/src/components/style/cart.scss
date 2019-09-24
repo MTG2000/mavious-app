@@ -1,0 +1,18 @@
+.product-cart {
+  width: 100%;
+
+  background: #eee;
+  &:nth-of-type(odd) {
+    background: #ccc;
+  }
+  img {
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    max-height: 300px;
+    object-fit: cover;
+  }
+  @media screen and (min-width: 992px) {
+    height: 250px;
+  }
+}
