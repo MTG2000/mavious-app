@@ -10,6 +10,7 @@ const OrderPage = () => {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [redirect, setRedirect] = useState(false);
+  const [orderSent, setOrderSent] = useState(false);
 
   //   console.log(products);
   const removeOrder = id => {
@@ -19,7 +20,8 @@ const OrderPage = () => {
 
   const hanldeOrder = async e => {
     e.preventDefault();
-    if (products.length > 0) {
+    if (products.length > 0 && !orderSent) {
+      setOrderSent(true);
       const infoToSend = { products, email, phone };
       const response = await fetch("/api/order", {
         method: "POST",
@@ -47,6 +49,8 @@ const OrderPage = () => {
         setProducts([]);
         setRedirect(true);
       } else {
+        setOrderSent(true);
+
         store.addNotification({
           title: "Not Successful",
           message: "Something Wrong happened, please try again",
@@ -68,7 +72,7 @@ const OrderPage = () => {
     const quantity = +p.quantity;
     totalPrice += price * quantity;
   });
-  totalPrice.toFixed(2);
+  totalPrice = totalPrice.toFixed(2);
 
   if (redirect) return <Redirect to="/" />;
 
